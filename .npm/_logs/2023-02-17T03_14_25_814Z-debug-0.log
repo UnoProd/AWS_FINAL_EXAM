@@ -1,0 +1,188 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@8.19.2
+2 info using node@v16.18.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 4ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:project Completed in 12ms
+10 timing config:load:file:/home/cloudshell-user/.npmrc Completed in 2ms
+11 timing config:load:user Completed in 2ms
+12 timing config:load:file:/usr/etc/npmrc Completed in 1ms
+13 timing config:load:global Completed in 1ms
+14 timing config:load:validate Completed in 0ms
+15 timing config:load:credentials Completed in 3ms
+16 timing config:load:setEnvs Completed in 0ms
+17 timing config:load Completed in 26ms
+18 timing npm:load:configload Completed in 26ms
+19 timing npm:load:mkdirpcache Completed in 1ms
+20 timing npm:load:mkdirplogs Completed in 0ms
+21 verbose title npm install @aws-amplify/cli
+22 verbose argv "install" "--global" "@aws-amplify/cli"
+23 timing npm:load:setTitle Completed in 1ms
+24 timing config:load:flatten Completed in 3ms
+25 timing npm:load:display Completed in 5ms
+26 verbose logfile logs-max:10 dir:/home/cloudshell-user/.npm/_logs
+27 verbose logfile /home/cloudshell-user/.npm/_logs/2023-02-17T03_14_25_814Z-debug-0.log
+28 timing npm:load:logFile Completed in 5ms
+29 timing npm:load:timers Completed in 0ms
+30 timing npm:load:configScope Completed in 0ms
+31 timing npm:load Completed in 40ms
+32 timing arborist:ctor Completed in 1ms
+33 silly logfile done cleaning log files
+34 timing idealTree:init Completed in 6ms
+35 timing idealTree:userRequests Completed in 3ms
+36 silly idealTree buildDeps
+37 silly fetch manifest @aws-amplify/cli@*
+38 http fetch GET 200 https://registry.npmjs.org/npm 243ms (cache miss)
+39 http fetch GET 200 https://registry.npmjs.org/@aws-amplify%2fcli 288ms (cache miss)
+40 silly placeDep ROOT @aws-amplify/cli@10.7.3 OK for:  want: *
+41 silly fetch manifest axios@^0.26.0
+42 silly fetch manifest rimraf@^3.0.2
+43 silly fetch manifest tar-stream@^2.2.0
+44 http fetch GET 200 https://registry.npmjs.org/axios 81ms (cache miss)
+45 http fetch GET 200 https://registry.npmjs.org/rimraf 84ms (cache miss)
+46 http fetch GET 200 https://registry.npmjs.org/tar-stream 99ms (cache miss)
+47 timing idealTree:#root Completed in 429ms
+48 silly placeDep node_modules/@aws-amplify/cli axios@0.26.1 OK for: @aws-amplify/cli@10.7.3 want: ^0.26.0
+49 silly placeDep node_modules/@aws-amplify/cli rimraf@3.0.2 OK for: @aws-amplify/cli@10.7.3 want: ^3.0.2
+50 silly placeDep node_modules/@aws-amplify/cli tar-stream@2.2.0 OK for: @aws-amplify/cli@10.7.3 want: ^2.2.0
+51 silly fetch manifest follow-redirects@^1.14.8
+52 silly fetch manifest glob@^7.1.3
+53 silly fetch manifest bl@^4.0.3
+54 silly fetch manifest end-of-stream@^1.4.1
+55 silly fetch manifest fs-constants@^1.0.0
+56 silly fetch manifest inherits@^2.0.3
+57 silly fetch manifest readable-stream@^3.1.1
+58 http fetch GET 200 https://registry.npmjs.org/bl 46ms (cache miss)
+59 http fetch GET 200 https://registry.npmjs.org/glob 51ms (cache miss)
+60 http fetch GET 200 https://registry.npmjs.org/follow-redirects 88ms (cache miss)
+61 http fetch GET 200 https://registry.npmjs.org/fs-constants 90ms (cache miss)
+62 http fetch GET 200 https://registry.npmjs.org/inherits 94ms (cache miss)
+63 http fetch GET 200 https://registry.npmjs.org/end-of-stream 96ms (cache miss)
+64 http fetch GET 200 https://registry.npmjs.org/readable-stream 98ms (cache miss)
+65 timing idealTree:node_modules/@aws-amplify/cli Completed in 115ms
+66 silly placeDep node_modules/@aws-amplify/cli follow-redirects@1.15.2 OK for: axios@0.26.1 want: ^1.14.8
+67 timing idealTree:node_modules/@aws-amplify/cli/node_modules/axios Completed in 36ms
+68 timing idealTree:node_modules/@aws-amplify/cli/node_modules/follow-redirects Completed in 0ms
+69 silly placeDep node_modules/@aws-amplify/cli glob@7.2.3 OK for: rimraf@3.0.2 want: ^7.1.3
+70 silly fetch manifest fs.realpath@^1.0.0
+71 silly fetch manifest inflight@^1.0.4
+72 silly fetch manifest inherits@2
+73 silly fetch manifest minimatch@^3.1.1
+74 silly fetch manifest once@^1.3.0
+75 silly fetch manifest path-is-absolute@^1.0.0
+76 http fetch GET 200 https://registry.npmjs.org/inflight 99ms (cache miss)
+77 http fetch GET 200 https://registry.npmjs.org/fs.realpath 101ms (cache miss)
+78 http fetch GET 200 https://registry.npmjs.org/path-is-absolute 98ms (cache miss)
+79 http fetch GET 200 https://registry.npmjs.org/once 99ms (cache miss)
+80 http fetch GET 200 https://registry.npmjs.org/minimatch 104ms (cache miss)
+81 timing idealTree:node_modules/@aws-amplify/cli/node_modules/rimraf Completed in 124ms
+82 silly placeDep node_modules/@aws-amplify/cli fs.realpath@1.0.0 OK for: glob@7.2.3 want: ^1.0.0
+83 silly placeDep node_modules/@aws-amplify/cli inflight@1.0.6 OK for: glob@7.2.3 want: ^1.0.4
+84 silly placeDep node_modules/@aws-amplify/cli inherits@2.0.4 OK for: glob@7.2.3 want: 2
+85 silly placeDep node_modules/@aws-amplify/cli minimatch@3.1.2 OK for: glob@7.2.3 want: ^3.1.1
+86 silly placeDep node_modules/@aws-amplify/cli once@1.4.0 OK for: glob@7.2.3 want: ^1.3.0
+87 silly placeDep node_modules/@aws-amplify/cli path-is-absolute@1.0.1 OK for: glob@7.2.3 want: ^1.0.0
+88 silly fetch manifest wrappy@1
+89 silly fetch manifest brace-expansion@^1.1.7
+90 http fetch GET 200 https://registry.npmjs.org/wrappy 71ms (cache miss)
+91 http fetch GET 200 https://registry.npmjs.org/brace-expansion 71ms (cache miss)
+92 timing idealTree:node_modules/@aws-amplify/cli/node_modules/glob Completed in 86ms
+93 timing idealTree:node_modules/@aws-amplify/cli/node_modules/fs.realpath Completed in 0ms
+94 silly placeDep node_modules/@aws-amplify/cli wrappy@1.0.2 OK for: inflight@1.0.6 want: 1
+95 timing idealTree:node_modules/@aws-amplify/cli/node_modules/inflight Completed in 7ms
+96 timing idealTree:node_modules/@aws-amplify/cli/node_modules/inherits Completed in 1ms
+97 silly placeDep node_modules/@aws-amplify/cli brace-expansion@1.1.11 OK for: minimatch@3.1.2 want: ^1.1.7
+98 silly fetch manifest balanced-match@^1.0.0
+99 silly fetch manifest concat-map@0.0.1
+100 http fetch GET 200 https://registry.npmjs.org/concat-map 26ms (cache miss)
+101 http fetch GET 200 https://registry.npmjs.org/balanced-match 28ms (cache miss)
+102 timing idealTree:node_modules/@aws-amplify/cli/node_modules/minimatch Completed in 31ms
+103 silly placeDep node_modules/@aws-amplify/cli balanced-match@1.0.2 OK for: brace-expansion@1.1.11 want: ^1.0.0
+104 silly placeDep node_modules/@aws-amplify/cli concat-map@0.0.1 OK for: brace-expansion@1.1.11 want: 0.0.1
+105 timing idealTree:node_modules/@aws-amplify/cli/node_modules/brace-expansion Completed in 3ms
+106 timing idealTree:node_modules/@aws-amplify/cli/node_modules/balanced-match Completed in 0ms
+107 timing idealTree:node_modules/@aws-amplify/cli/node_modules/concat-map Completed in 0ms
+108 timing idealTree:node_modules/@aws-amplify/cli/node_modules/once Completed in 0ms
+109 timing idealTree:node_modules/@aws-amplify/cli/node_modules/path-is-absolute Completed in 0ms
+110 silly placeDep node_modules/@aws-amplify/cli bl@4.1.0 OK for: tar-stream@2.2.0 want: ^4.0.3
+111 silly placeDep node_modules/@aws-amplify/cli end-of-stream@1.4.4 OK for: tar-stream@2.2.0 want: ^1.4.1
+112 silly placeDep node_modules/@aws-amplify/cli fs-constants@1.0.0 OK for: tar-stream@2.2.0 want: ^1.0.0
+113 silly placeDep node_modules/@aws-amplify/cli readable-stream@3.6.0 OK for: tar-stream@2.2.0 want: ^3.1.1
+114 silly fetch manifest buffer@^5.5.0
+115 silly fetch manifest string_decoder@^1.1.1
+116 silly fetch manifest util-deprecate@^1.0.1
+117 http fetch GET 200 https://registry.npmjs.org/util-deprecate 36ms (cache miss)
+118 http fetch GET 200 https://registry.npmjs.org/string_decoder 42ms (cache miss)
+119 http fetch GET 200 https://registry.npmjs.org/buffer 47ms (cache miss)
+120 timing idealTree:node_modules/@aws-amplify/cli/node_modules/tar-stream Completed in 99ms
+121 silly placeDep node_modules/@aws-amplify/cli buffer@5.7.1 OK for: bl@4.1.0 want: ^5.5.0
+122 silly fetch manifest base64-js@^1.3.1
+123 silly fetch manifest ieee754@^1.1.13
+124 http fetch GET 200 https://registry.npmjs.org/base64-js 25ms (cache miss)
+125 http fetch GET 200 https://registry.npmjs.org/ieee754 44ms (cache miss)
+126 timing idealTree:node_modules/@aws-amplify/cli/node_modules/bl Completed in 47ms
+127 silly placeDep node_modules/@aws-amplify/cli base64-js@1.5.1 OK for: buffer@5.7.1 want: ^1.3.1
+128 silly placeDep node_modules/@aws-amplify/cli ieee754@1.2.1 OK for: buffer@5.7.1 want: ^1.1.13
+129 timing idealTree:node_modules/@aws-amplify/cli/node_modules/buffer Completed in 3ms
+130 timing idealTree:node_modules/@aws-amplify/cli/node_modules/base64-js Completed in 0ms
+131 timing idealTree:node_modules/@aws-amplify/cli/node_modules/end-of-stream Completed in 0ms
+132 timing idealTree:node_modules/@aws-amplify/cli/node_modules/fs-constants Completed in 0ms
+133 timing idealTree:node_modules/@aws-amplify/cli/node_modules/ieee754 Completed in 0ms
+134 silly placeDep node_modules/@aws-amplify/cli string_decoder@1.3.0 OK for: readable-stream@3.6.0 want: ^1.1.1
+135 silly placeDep node_modules/@aws-amplify/cli util-deprecate@1.0.2 OK for: readable-stream@3.6.0 want: ^1.0.1
+136 silly fetch manifest safe-buffer@~5.2.0
+137 http fetch GET 200 https://registry.npmjs.org/safe-buffer 23ms (cache miss)
+138 timing idealTree:node_modules/@aws-amplify/cli/node_modules/readable-stream Completed in 28ms
+139 silly placeDep node_modules/@aws-amplify/cli safe-buffer@5.2.1 OK for: string_decoder@1.3.0 want: ~5.2.0
+140 timing idealTree:node_modules/@aws-amplify/cli/node_modules/string_decoder Completed in 1ms
+141 timing idealTree:node_modules/@aws-amplify/cli/node_modules/safe-buffer Completed in 0ms
+142 timing idealTree:node_modules/@aws-amplify/cli/node_modules/util-deprecate Completed in 0ms
+143 timing idealTree:node_modules/@aws-amplify/cli/node_modules/wrappy Completed in 0ms
+144 timing idealTree:buildDeps Completed in 1016ms
+145 timing idealTree:fixDepFlags Completed in 1ms
+146 timing idealTree Completed in 1026ms
+147 timing reify:loadTrees Completed in 1029ms
+148 timing reify:diffTrees Completed in 2ms
+149 silly reify moves {}
+150 timing reify:retireShallow Completed in 1ms
+151 timing reify:rollback:createSparse Completed in 0ms
+152 timing reify:rollback:retireShallow Completed in 0ms
+153 timing command:install Completed in 1088ms
+154 notice
+154 notice New [31mmajor[39m version of npm available! [31m8.19.2[39m -> [32m9.5.0[39m
+154 notice Changelog: [36mhttps://github.com/npm/cli/releases/tag/v9.5.0[39m
+154 notice Run [32mnpm install -g npm@9.5.0[39m to update!
+154 notice
+155 verbose stack Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/@aws-amplify'
+156 verbose cwd /home/cloudshell-user
+157 verbose Linux 5.10.162-141.675.amzn2.x86_64
+158 verbose node v16.18.1
+159 verbose npm  v8.19.2
+160 error code EACCES
+161 error syscall mkdir
+162 error path /usr/lib/node_modules/@aws-amplify
+163 error errno -13
+164 error [Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/@aws-amplify'] {
+164 error   errno: -13,
+164 error   code: 'EACCES',
+164 error   syscall: 'mkdir',
+164 error   path: '/usr/lib/node_modules/@aws-amplify'
+164 error }
+165 error
+165 error The operation was rejected by your operating system.
+165 error It is likely you do not have the permissions to access this file as the current user
+165 error
+165 error If you believe this might be a permissions issue, please double-check the
+165 error permissions of the file and its containing directories, or try running
+165 error the command again as root/Administrator.
+166 verbose exit -13
+167 timing npm Completed in 1325ms
+168 verbose unfinished npm timer reify 1676603666046
+169 verbose unfinished npm timer reify:createSparse 1676603667123
+170 verbose code -13
+171 error A complete log of this run can be found in:
+171 error     /home/cloudshell-user/.npm/_logs/2023-02-17T03_14_25_814Z-debug-0.log
